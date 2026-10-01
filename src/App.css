@@ -182,3 +182,36 @@
     border-right-color: var(--border);
   }
 }
+
+.DiamondCard {
+  border: 1px white solid;
+  width: 220px;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.DiamondContainer {
+  display: flex;
+  border: 2px #05aae1 solid;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 10px;
+
+  justify-content: space-around;
+}
+
+@media (max-width: 550px) {
+  .DiamondContainer {
+    flex-direction: column;
+  }
+
+  .DiamondCard {
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px auto;
+  }
+}
+
